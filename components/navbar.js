@@ -58,15 +58,14 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="992px"
         wrap="wrap"
         align="center"
         justify="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            {/*<Logo />*/}
-            Jinareum:D
+            <Logo />
           </Heading>
         </Flex>
 
