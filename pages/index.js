@@ -4,22 +4,19 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear , BioRole } from '../components/bio'
+import Skills from '../components/skills'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -28,7 +25,7 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container maxW="840px">
       <Box
         borderRadius="lg"
         mb={6}
@@ -37,15 +34,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+       안녕하세요. 웹 프론트엔드 개발자 진아름입니다.
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Better than yesterday.
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>보다 개선된 제품의 성능, 보다 좋은 사용자의 경험을 제공하고자 합니다.</p>
         </Box>
         <Box
           flexShrink={0}
@@ -54,7 +51,7 @@ const Home = () => (
           textAlign="center"
         >
           <Box
-            borderColor="whiteAlpha.800"
+            borderColor="blackAlpha.500"
             borderWidth={2}
             borderStyle="solid"
             w="100px"
@@ -64,7 +61,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/jinareum.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -76,29 +73,16 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Introduce
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          4년간 웹 퍼블리셔(UI 개발자)로 일하며 기획이 반영된 디자인을 서비스 화면 UI 개발을 하였습니다.<br/>
+          컴포넌트로 시작하여 레이아웃, 웹 페이지까지 화면별로 나누어 효율적인 코드 작성 및 관리를 추구하고, 효율적인 개발을 위해 반복적으로 쓰이는 코드를 활용할 수 있게 재구성하여 불필요한 코드작성을 줄이는 작업을 했습니다. <br/><br/>
+          <strong>개발</strong>은 팀원과 약속과 커뮤니케이션으로 이루어진다고 생각합니다. <br/>
+          팀원과 커뮤니케이션을 통해서 효율적인 코드 작성 및 유지보수를 하기 위해 끊임없는 공부를 하고있습니다.<br/>
+          타 직군과의 커뮤니케이션을 통해 기획의도를 파악하고, 방법과 의견을 제안하는 등 유연한 의사소통을 지향합니다.<br/><br/>
+          코드와 업무 의사소통도 경청하며, 유연하게 소통할 수 있는 개발자가 되기 위해 노력하겠습니다!
+
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -108,139 +92,65 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Projects
           </Button>
         </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Experience
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>20.06 - 22.12</BioYear>
+          CNDF.
+          <BioRole>개발2팀 대리 / UI 개발자</BioRole>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>20.01 - 20.02</BioYear>
+          프리랜서
+          <BioRole></BioRole>
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>18.04 - 19.12</BioYear>
+          innoIT
+          <BioRole>개발팀 주임</BioRole>
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>17.09 - 18.01</BioYear>
+          YellowForm
+          <BioRole>사원</BioRole>
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Skills
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          <Skills>HTML</Skills>,<Skills>CSS(SASS)</Skills>,<Skills>Javascript</Skills>,<Skills>React.js</Skills>,<Skills>Next.js</Skills>,<Skills>styled-components</Skills>,<Skills>Webpack</Skills>
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Connect
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/logdotjar" target="_blank">
               <Button
-                variant="ghost"
-                colorScheme="teal"
+                variant="link"
+                color="#7d7d7c"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @logdotjar
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
+
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
