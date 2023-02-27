@@ -31,7 +31,7 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
        안녕하세요. 웹 프론트엔드 개발자 진아름입니다.
