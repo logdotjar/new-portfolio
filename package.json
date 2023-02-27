@@ -1,7 +1,7 @@
 {
-  "name": "craftzdog-homepage",
+  "name": "jinareum",
   "version": "1.0.0",
-  "description": "Takuya's website",
+  "description": "jinareum's portfolio website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,19 +10,26 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
-  "license": "MIT",
+  "author": "jinareum",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@icons-pack/react-simple-icons": "^6.3.0",
     "framer-motion": "^8.4.0",
     "next": "^13.1.1",
     "react": "^18.2.0",
+    "react-d3-cloud": "^1.0.6",
     "react-dom": "^18.2.0",
+    "react-icon-cloud": "^4.1.4",
     "react-icons": "^4.7.1",
-    "three": "^0.148.0"
+    "react-quill": "^2.0.0",
+    "react-scripts": "^5.0.1",
+    "react-simple-icons": "^1.0.0-beta.5",
+    "simple-icons": "^8.6.0",
+    "three": "^0.148.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^8.31.0",
