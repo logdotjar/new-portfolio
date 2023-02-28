@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon , EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear , BioRole } from '../components/bio'
 import Skills from '../components/skills'
@@ -94,7 +94,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            Projects
+            Portfolio
           </Button>
         </Box>
       </Section>
@@ -149,6 +149,16 @@ const Home = () => (
                 @logdotjar
               </Button>
             </Link>
+          </ListItem>
+          <ListItem>
+            <Button
+                variant="link"
+                color="#7d7d7c"
+                minW="0"
+                leftIcon={<EmailIcon />}
+            >
+              devofjar@gmail.com
+            </Button>
           </ListItem>
 
         </List>
