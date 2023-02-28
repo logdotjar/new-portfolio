@@ -18,6 +18,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import GithubCalendar from '../components/github'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -26,6 +27,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container maxW="840px">
+      <GithubCalendar/>
       <Box
         borderRadius="lg"
         mb={6}
