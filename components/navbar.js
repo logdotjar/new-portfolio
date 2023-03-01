@@ -78,9 +78,9 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Projects
+            Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="/resume" path={path}>
             Resume
           </LinkItem>
           <LinkItem
@@ -113,9 +113,9 @@ const Navbar = props => {
                   About
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Projects
+                  Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
+                <MenuItem as={MenuLink} href="/resume">
                   Resume
                 </MenuItem>
 
@@ -123,7 +123,7 @@ const Navbar = props => {
                   as={Link}
                   href="https://github.com/logdotjar"
                 >
-                  View Source
+                  github
                 </MenuItem>
               </MenuList>
             </Menu>

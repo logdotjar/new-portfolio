@@ -34,17 +34,8 @@ const GithubCalendar = () => {
 
             labels={{
                 totalCount: ' ',
-                weekdays: [
-                    'Sun',
-                    'Mon',
-                    'Tue',
-                    'Wed',
-                    'Thu',
-                    'Fri',
-                    'Sat'
-                ],
             }}
-
+            // 잔디 색깔 변경
             theme={{
                 level0: '#F0F0F0',
                 level1: '#C4EDDE',
@@ -52,7 +43,6 @@ const GithubCalendar = () => {
                 level3: '#F73859',
                 level4: '#384259'
             }}
-            // hideColorLegend
             transformData={selectLastHalfYear}
             transformTotalCount={false}
             blockSize={13}

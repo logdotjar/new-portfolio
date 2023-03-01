@@ -16,10 +16,12 @@ const ThemeToggleButton = () => {
         transition={{ duration: 0.2 }}
       >
         <IconButton
-          bg={useColorModeValue('#cccccc', '#F6AD55')}
-          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          onClick={toggleColorMode}
-        ></IconButton>
+            borderRadius={'50%'}
+            bg={useColorModeValue('#cccccc', '#F6AD55')}
+            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+            onClick={toggleColorMode}
+        >
+        </IconButton>
       </motion.div>
     </AnimatePresence>
   )
