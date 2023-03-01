@@ -10,15 +10,16 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon , EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear , BioRole } from '../components/bio'
 import Skills from '../components/skills'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub } from 'react-icons/io5'
-import Image from 'next/image'
 import GithubCalendar from '../components/github'
+import EmailCopy from '../components/mainEmailCopy'
+import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -143,7 +144,7 @@ const Home = () => (
             <Link href="https://github.com/logdotjar" target="_blank">
               <Button
                 variant="link"
-                color="#7d7d7c"
+                colorScheme="gray"
                 leftIcon={<IoLogoGithub />}
               >
                 @logdotjar
@@ -151,18 +152,9 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Button
-                variant="link"
-                color="#7d7d7c"
-                minW="0"
-                leftIcon={<EmailIcon />}
-            >
-              devofjar@gmail.com
-            </Button>
+            <EmailCopy/>
           </ListItem>
-
         </List>
-
       </Section>
     </Container>
   </Layout>
