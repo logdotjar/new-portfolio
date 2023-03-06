@@ -16,9 +16,9 @@ import { BioSection, BioYear , BioRole } from '../components/bio'
 import Skills from '../components/skills'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub , IoMail } from 'react-icons/io5'
 import GithubCalendar from '../components/github'
-import EmailCopy from '../components/mainEmailCopy'
+import CopyAddr from '../components/copyAddr'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -112,7 +112,6 @@ const Home = () => (
         <BioSection>
           <BioYear>20.01 - 20.02</BioYear>
           프리랜서
-          <BioRole></BioRole>
         </BioSection>
         <BioSection>
           <BioYear>18.04 - 19.12</BioYear>
@@ -143,16 +142,24 @@ const Home = () => (
           <ListItem>
             <Link href="https://github.com/logdotjar" target="_blank">
               <Button
-                variant="link"
-                colorScheme="gray"
-                leftIcon={<IoLogoGithub />}
+                  variant="link"
+                  colorScheme="gray"
+                  leftIcon={<IoLogoGithub/>}
               >
                 @logdotjar
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <EmailCopy/>
+            <Button
+                variant="link"
+                minW="0"
+                colorScheme="gray"
+                leftIcon={<IoMail/>}
+                onClick={() => CopyAddr("devofjar@gmail.com","이메일이 복사되었습니다.")}
+            >
+              devofjar@gmail.com
+            </Button>
           </ListItem>
         </List>
       </Section>
