@@ -23,3 +23,38 @@ export const BioRole = styled.span`
   font-size:0.8em;
   color:#555;
 `
+export const ListDot = styled.span`
+  position:relative;
+  display: block;
+  align-items: center;
+  padding-left:20px;
+  line-height: 1.6;
+  &::before{
+    content:"";
+    position: absolute;
+    left:5px;
+    top:12px;
+    //transform:translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:#333;
+  }
+`
+export const ResumeCompany = styled.p`
+  padding:5px 0;
+  font-size: 0.8rem;
+  color:#787774;
+`
+export const ResumeYear = styled.span`
+  color:#37352f;
+  font-size: 0.9rem;
+  font-weight: 400;
+`
+export const ResumeRole = styled.span`
+  padding-bottom:1rem;
+`
+export const ResumeText = styled.span`
+  display: inline-flex;
+  align-items: center;
+`
