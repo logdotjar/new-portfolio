@@ -1,7 +1,6 @@
 import {
     Container,
     Badge,
-    Link,
     List,
     ListItem, Heading, Center
 } from '@chakra-ui/react'
@@ -13,7 +12,7 @@ import P from '../../components/paragraph'
 
 const Pickni = () => (
     <Layout title="Pick&I">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 픽앤아이(Pick&i) <Badge>2018.04-2019.11</Badge>
             </Title>

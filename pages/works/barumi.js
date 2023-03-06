@@ -13,7 +13,7 @@ import P from '../../components/paragraph'
 
 const Barumi = () => (
     <Layout title="Patagonia">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 바르미(barumi) <Badge>2020.07-2020.08</Badge>
             </Title>

@@ -13,7 +13,7 @@ import P from '../../components/paragraph'
 
 const Patagonia = () => (
     <Layout title="Patagonia">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 파타고니아(Patagonia Kr) <Badge>2022.02-2022.08</Badge>
             </Title>

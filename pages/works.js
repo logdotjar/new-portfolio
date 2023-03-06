@@ -2,121 +2,87 @@ import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbPatagonia from '../public/images/works/patagonia_web.png'
+import thumbOniljang from '../public/images/works/oniljang_web01.png'
+import thumbSdms from '../public/images/works/sdms-web.png'
+import thumbBarumi from '../public/images/works/barumi_web.png'
+import thumbPickni from '../public/images/works/pickni/thumbnail.png'
+import thumbSchoolSafe from '../public/images/works/schoolsafe_thumbnail.png'
+import thumbYelloform from '../public/images/works/yelloform/yelloform_thumbnail.png'
 
 const Works = () => (
   <Layout title="Works">
-    <Container>
+    <Container maxW="640px">
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
-          </WorkGridItem>
-        </Section>
-        <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+              id="patagonia"
+              title="파타고니아"
+              thumbnail={thumbPatagonia}
           >
-            Music recommendation app for iOS
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            파타고니아 코리아 통합 쇼핑몰 리뉴얼
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+              id="oniljang"
+              title="온일장"
+              thumbnail={thumbOniljang}
           >
-            The mode magazine for understanding to personally enjoy Japan
+            B2B 식자재 쇼핑몰
           </WorkGridItem>
         </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
+        <Section delay={0.1}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="sdms"
+            title="SDMS/CDMS"
+            thumbnail={thumbSdms}
           >
-            Automatic audio file tagging tool using FreeDB for Windows
+           식품 유통관리 시스템 `SDMS`<br/>
+            카드배송 관리시스템 `CDMS`
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="barumi"
+              title="바르미"
+              thumbnail={thumbBarumi}
+          >
+            바르미&인터불고 호텔 배달 서비스
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="pickni"
+              title="픽앤아이"
+              thumbnail={thumbPickni}
+          >
+            커스터마이징 홈페이지 판매 자사 서비스
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="school"
+              title="학교안전공제중앙회"
+              thumbnail={thumbSchoolSafe}
+          >
+            리뉴얼 구축
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="yelloform"
+              title="에이전시 옐로폼"
+              thumbnail={thumbYelloform}
+          >
           </WorkGridItem>
         </Section>
       </SimpleGrid>
+
     </Container>
   </Layout>
 )

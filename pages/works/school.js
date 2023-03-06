@@ -15,7 +15,7 @@ import P from '../../components/paragraph'
 
 const SchoolSafe = () => (
     <Layout title="학교안전공제중앙회">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 학교안전공제중앙회 <Badge>2019.05-2019.07</Badge>
             </Title>

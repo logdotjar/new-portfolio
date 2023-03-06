@@ -13,7 +13,7 @@ import P from '../../components/paragraph'
 
 const Sdms = () => (
     <Layout title="Oniljang">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 온일장(Oniljang) <Badge>2021.07-2021.12</Badge>
             </Title>

@@ -15,7 +15,7 @@ import P from '../../components/paragraph'
 
 const Sdms = () => (
     <Layout title="Sdms">
-        <Container>
+        <Container maxW="720px">
             <Title>
                 SDMS <Badge>2020.06-2021.02</Badge><br/>
                 CDMS <Badge>2021.01-2021.07</Badge>
