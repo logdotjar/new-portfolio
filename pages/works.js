@@ -9,6 +9,7 @@ import thumbBarumi from '../public/images/works/barumi_web.png'
 import thumbPickni from '../public/images/works/pickni/thumbnail.png'
 import thumbSchoolSafe from '../public/images/works/schoolsafe_thumbnail.png'
 import thumbYelloform from '../public/images/works/yelloform/yelloform_thumbnail.png'
+import thumbT9 from '../public/images/works/t9_thumbnail.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -44,6 +45,14 @@ const Works = () => (
           >
            식품 유통관리 시스템 `SDMS`<br/>
             카드배송 관리시스템 `CDMS`
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.1}>
+          <WorkGridItem
+              id="t9"
+              title="T9"
+              thumbnail={thumbT9}
+          >
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
