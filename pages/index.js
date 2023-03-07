@@ -13,7 +13,6 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear , BioRole } from '../components/bio'
-import Skills from '../components/skills'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub , IoMail } from 'react-icons/io5'
@@ -123,15 +122,6 @@ const Home = () => (
           YellowForm
           <BioRole>사원</BioRole>
         </BioSection>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Skills
-        </Heading>
-        <Paragraph>
-          <Skills>HTML</Skills>,<Skills>CSS(SASS)</Skills>,<Skills>Javascript</Skills>,<Skills>React.js</Skills>,<Skills>Next.js</Skills>,<Skills>styled-components</Skills>,<Skills>Webpack</Skills>
-        </Paragraph>
       </Section>
 
       <Section delay={0.3}>
