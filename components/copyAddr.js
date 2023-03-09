@@ -1,7 +1,3 @@
-import React from "react";
-import { Button } from '@chakra-ui/react'
-import { EmailIcon } from '@chakra-ui/icons'
-
 const CopyAddr = (text,message) => {
     // 1. 브라우저가 copy 지원 안될 경우
     if (!document.queryCommandSupported("copy")) {
