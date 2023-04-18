@@ -1,4 +1,5 @@
 # Jinareum's Portfolio
+![react-portfolio.png](public%2Fimages%2Fcontents%2Freact-portfolio.png)
 
 ## Stack
 
@@ -9,16 +10,19 @@
 ## Project structure
 
 ```
-$PROJECT_ROOT
+$PROJECT ROOT
 │   # Page files
 ├── pages
 │   # React component files
 ├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
+│   # Non-react modules (Protfolio pages,Side projects)
 └── public
 ```
+
+## 작성과정
+- Next.js : SSR/SEO
+- Chakra UI : React UI 라이브러리
+=> 페이지 로딩속도 개선 및 반응형 디자인을 구현하기 위한 라이브러리 사용
 
 ### 커밋 규약
 
