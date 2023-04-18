@@ -1,16 +1,16 @@
 # Jinareum's Portfolio
 ![react-portfolio.png](public%2Fimages%2Fcontents%2Freact-portfolio.png)
 
-## Stack
+## 사용기술
 
 - [Next.js](https://nextjs.org/) 
 - [Chakra UI](https://chakra-ui.com/) 
 - [Framer Motion](https://www.framer.com/motion/)
 
-## Project structure
+## 프로젝트 구조
 
 ```
-$PROJECT ROOT
+$ROOT
 │   # Page files
 ├── pages
 │   # React component files
@@ -21,7 +21,7 @@ $PROJECT ROOT
 
 ## 작성과정
 - Next.js : SSR/SEO
-- Chakra UI : React UI 라이브러리
+- Chakra UI : React UI 라이브러리<br/>
 => 페이지 로딩속도 개선 및 반응형 디자인을 구현하기 위한 라이브러리 사용
 
 ### 커밋 규약
