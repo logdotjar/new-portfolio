@@ -118,10 +118,12 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
+                <MenuItem as={MenuLink} href="/sideProject">
+                  React
+                </MenuItem>
                 <MenuItem as={MenuLink} href="/resume">
                   Resume
                 </MenuItem>
-
                 <MenuItem
                   as={Link}
                   href="https://github.com/logdotjar"
