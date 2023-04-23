@@ -25,7 +25,7 @@ const SidePrjoect = () => (
                     <GridItem
                         title="포트폴리오"
                         thumbnail={thumbPortfolio}
-                        href="https://github.com/tigerenergy/nextjs"
+                        href="https://github.com/logdotjar/new-portfolio"
                     />
                 </SimpleGrid>
             </Section>
