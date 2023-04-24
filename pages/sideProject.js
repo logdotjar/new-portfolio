@@ -5,7 +5,7 @@ import { GridItem } from '../components/grid-item'
 
 import thumbFitness from '../public/images/contents/react-fitness.png';
 import thumbNetflix from '../public/images/contents/netflix.png';
-import thumbJweet from '../public/images/contents/react.png';
+import thumbJweet from '../public/images/contents/react-jweet.png';
 import thumbPortfolio from '../public/images/contents/react-portfolio.png';
 
 const SidePrjoect = () => (
