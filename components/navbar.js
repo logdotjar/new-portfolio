@@ -83,9 +83,9 @@ const Navbar = props => {
           <LinkItem href="/sideProject" path={path}>
             React
           </LinkItem>
-          <LinkItem href="/resume" path={path}>
-            Resume
-          </LinkItem>
+          {/*<LinkItem href="/resume" path={path}>*/}
+          {/*  Resume*/}
+          {/*</LinkItem>*/}
           <LinkItem
             target="_blank"
             href="https://github.com/logdotjar"
@@ -121,9 +121,9 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/sideProject">
                   React
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/resume">
-                  Resume
-                </MenuItem>
+                {/*<MenuItem as={MenuLink} href="/resume">*/}
+                {/*  Resume*/}
+                {/*</MenuItem>*/}
                 <MenuItem
                   as={Link}
                   href="https://github.com/logdotjar"
