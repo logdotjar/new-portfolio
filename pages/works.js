@@ -2,12 +2,12 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import thumbPatagonia from '../public/images/works/patagonia_web.png'
-import thumbOniljang from '../public/images/works/oniljang_web01.png'
+import thumbPatagonia from '../public/images/works/patagonia_thumbnail.png'
+import thumbOniljang from '../public/images/works/oniljang_thumbnail.png'
 import thumbSdms from '../public/images/works/sdms-web.png'
 import thumbBarumi from '../public/images/works/barumi_web.png'
-import thumbPickni from '../public/images/works/pickni/thumbnail.png'
-import thumbSchoolSafe from '../public/images/works/schoolsafe_thumbnail.png'
+import thumbPickni from '../public/images/works/pickni_thumbnail.png'
+import thumbSchoolSafe from '../public/images/works/schoolsafe_web.png'
 import thumbYelloform from '../public/images/works/yelloform/yelloform_thumbnail.png'
 import thumbT9 from '../public/images/works/t9_thumbnail.png'
 
@@ -17,7 +17,6 @@ const Works = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
-
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
@@ -92,7 +91,6 @@ const Works = () => (
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-
     </Container>
   </Layout>
 )
