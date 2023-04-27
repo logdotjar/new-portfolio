@@ -53,6 +53,7 @@ const Works = () => (
               title="T9"
               thumbnail={thumbT9}
           >
+            복권 구매 키오스크와 구매이력 조회 앱
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
