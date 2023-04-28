@@ -16,9 +16,16 @@ import { BioSection, BioYear , BioRole } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoGithub , IoMail } from 'react-icons/io5'
-import GithubCalendar from '../components/github'
 import CopyAddr from '../components/copyAddr'
 import Image from 'next/image'
+
+import dynamic from 'next/dynamic'
+import VoxelTigerLoader from '../components/voxel-tiger-loader'
+const LazyVoxelDog = dynamic(() => import('../components/voxel-tiger'), {
+  ssr: false,
+  loading: () => <VoxelTigerLoader />
+})
+
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -27,7 +34,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container maxW="840px">
-      <GithubCalendar/>
+      <LazyVoxelDog/>
       <Box
         borderRadius="lg"
         mb={6}
