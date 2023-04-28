@@ -20,8 +20,7 @@ export const BioRole = styled.span`
   display: flex;
   align-items: center;
   margin-left:0.5em;
-  font-size:0.8em;
-  color:#555;
+  font-size:0.7em;
 `
 export const ListDot = styled.span`
   position:relative;

@@ -82,16 +82,13 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Introduce
+          Hello~🖐🏻
         </Heading>
         <Paragraph>
-          4년간 웹 퍼블리셔(UI 개발자)로 일하며 기획이 반영된 디자인을 서비스 화면 UI 개발을 하였습니다.<br/>
-          컴포넌트로 시작하여 레이아웃, 웹 페이지까지 화면별로 나누어 효율적인 코드 작성 및 관리를 추구하고, 효율적인 개발을 위해 반복적으로 쓰이는 코드를 활용할 수 있게 재구성하여 불필요한 코드작성을 줄이는 작업을 했습니다. <br/><br/>
-          <strong>개발</strong>은 팀원과 약속과 커뮤니케이션으로 이루어진다고 생각합니다. <br/>
-          팀원과 커뮤니케이션을 통해서 효율적인 코드 작성 및 유지보수를 하기 위해 끊임없는 공부를 하고있습니다.<br/>
-          타 직군과의 커뮤니케이션을 통해 기획의도를 파악하고, 방법과 의견을 제안하는 등 유연한 의사소통을 지향합니다.<br/><br/>
-          코드와 업무 의사소통도 경청하며, 유연하게 소통할 수 있는 개발자가 되기 위해 노력하겠습니다!
-
+          안녕하세요!<br/>
+          저는 사용자의 입장에서 개선되어야 할 문제점을 찾고, 협업을 통해서 개선해나가며 성장하고 있는 신입 프론트엔드 개발자입니다.<br/>
+          웹 서비스로 브랜드의 가치를 고객에게 전달하기 위해 다양한 직군과 커뮤니케이션을 하며 협업해왔습니다.<br/>
+          UI를 시작으로 프론트엔드로 달려나가며 비즈니스의 성장에 적극적으로 임합니다.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -141,6 +138,7 @@ const Home = () => (
               <Button
                   variant="link"
                   colorScheme="gray"
+                  fontWeight="400"
                   leftIcon={<IoLogoGithub/>}
               >
                 @logdotjar
@@ -152,6 +150,7 @@ const Home = () => (
                 variant="link"
                 minW="0"
                 colorScheme="gray"
+                fontWeight="400"
                 leftIcon={<IoMail/>}
                 onClick={() => CopyAddr("devofjar@gmail.com","이메일이 복사되었습니다.")}
             >
