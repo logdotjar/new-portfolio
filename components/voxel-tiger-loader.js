@@ -18,8 +18,8 @@ export const TigerContainer = forwardRef(({ children }, ref) => (
     className="voxel-dog"
     m="auto"
     mt={['-20px', '-60px', '-60px']}
-    mb={['-40px', '-140px', '-70px']}
-    w={[280, 480, 400]}
+    mb={['-40px', '-70px', '-70px']}
+    w={['100%', '100%', 400]}
     h={[280, 480, 400]}
     position="relative"
   >

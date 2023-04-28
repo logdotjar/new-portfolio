@@ -17,7 +17,7 @@ const ThemeToggleButton = () => {
       >
         <IconButton
             borderRadius={'50%'}
-            bg={useColorModeValue('#cccccc', '#F6AD55')}
+            bg={useColorModeValue('#cccccc', '#553C9A')}
             icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
             onClick={toggleColorMode}
         >
