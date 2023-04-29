@@ -15,7 +15,7 @@ const Patagonia = () => (
     <Layout title="Patagonia">
         <Container maxW="720px">
             <Title>
-                파타고니아(Patagonia Kr) <Badge>2022.02-2022.08</Badge>
+                파타고니아(Patagonia Kr) <Badge>2022.02-2022.09</Badge>
             </Title>
             <P>
                 솔루션 커스터마이징 <br/>
