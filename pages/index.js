@@ -119,7 +119,7 @@ const Home = () => (
           프리랜서
         </BioSection>
         <BioSection>
-          <BioYear>18.04 - 19.12</BioYear>
+          <BioYear>18.04 - 19.11</BioYear>
           innoIT
           <BioRole>개발팀 주임</BioRole>
         </BioSection>
