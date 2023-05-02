@@ -18,6 +18,8 @@ const SchoolSafe = () => (
         <Container maxW="720px">
             <Title>
                 학교안전공제중앙회 <Badge>2019.05-2019.07</Badge>
+                <br/>
+                학교 안전교육 전문강사 인력풀 <Badge>2019.08-2021.11</Badge>
             </Title>
             <P>
                 반응형 웹 리뉴얼과 어드민<br/>
@@ -53,6 +55,12 @@ const SchoolSafe = () => (
             </Heading>
             <WorkImage src="/images/works/schoolsafe_admin.png" alt="학교안전공제중앙회 어드민" />
 
+            <Heading as="h4" fontSize={16} my={6}>
+                <Center>학교 안전교육 전문강사 인력풀</Center>
+            </Heading>
+
+            <WorkImage src="/images/works/lecture_web01.png" alt="학교 안전교육 전문강사 인력풀" />
+            <WorkImage src="/images/works/lecture_web02.png" alt="학교 안전교육 전문강사 인력풀" />
         </Container>
     </Layout>
 )

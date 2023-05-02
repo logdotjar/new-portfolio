@@ -86,11 +86,9 @@ const Works = () => (
         <Section delay={0.4}>
           <WorkGridItem
               id="school"
-              title="학교안전공제중앙회"
+              title={["학교안전공제중앙회", <br/>, "학교 안전교육 전문강사 인력풀"]}
               thumbnail={thumbSchoolSafe}
           >
-            학교안전공제중앙회 <br/>
-            학교 안전교육 전문강사 인력풀
           </WorkGridItem>
         </Section>
         <Section delay={0.4}>
